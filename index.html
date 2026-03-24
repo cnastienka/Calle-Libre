@@ -8,49 +8,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navBar">
 
-    </div>
-    <div class="navbar">
+    <!-- ================================================================
+        CONTACTO
+    ================================================================ -->
+    <section class="contact" id="contacto">
+        <div class="contact-inner">
 
-    </div>
-    <div class="ropa">
+            <!-- Columna izquierda: título + datos de contacto -->
+            <div>
+                <div style="margin-bottom:32px;">
+                    <p class="section-tag" style="justify-content:flex-start;color:#fff;">ESCRÍBENOS</p>
+                    <h2 class="section-title" style="color:#fff;font-size:clamp(3rem,7vw,6rem);letter-spacing:2px;">CONTACTO</h2>
+                </div>
 
-    </div>
-    <div class="tablas">
-<div class="card" style="width: 18rem;">
-  <img src="https://sindicatoskated.com/wp-content/uploads/2026/03/DORADO-300x300.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Tabla Ludica Portal</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div class="baleros">
+                <p class="contact-intro">
+                    ¿Tienes dudas sobre productos, tallas o envíos? Contáctanos y te respondemos rápido.
+                </p>
 
-    </div>
-    <div class="lijas">
+                <div class="contact-detail">
+                    <div class="icon">📍</div>
+                    <div class="txt">
+                        <strong>Ubicación</strong>
+                        <span>Ciudad de México, CDMX</span>
+                    </div>
+                </div>
 
-    </div>
-    <div class="trocs">
+                <div class="contact-detail">
+                    <div class="icon">📱</div>
+                    <div class="txt">
+                        <strong>WhatsApp</strong>
+                        <span>+52 55 1234 5678</span>
+                    </div>
+                </div>
 
-    </div>
-    <div class="llantas">
+                <div class="contact-detail">
+                    <div class="icon">📧</div>
+                    <div class="txt">
+                        <strong>Email</strong>
+                        <span>hola@callelibre.mx</span>
+                    </div>
+                </div>
 
-    </div>
-    <div class="elevadores">
+                <div class="contact-detail">
+                    <div class="icon">🕐</div>
+                    <div class="txt">
+                        <strong>Horario</strong>
+                        <span>Lun-Sáb 10:00-20:00</span>
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <div class="protecciones">
+            <!-- Columna derecha: formulario -->
+            <div class="contact-form reveal">
 
-    </div>
-    <div class="estampas">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com"/>
+                    </div>
+                </div>
 
-    </div>
-    <footer class="footer">
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">— Selecciona un tema —</option>
+                        <option value="pedido">Consulta de pedido</option>
+                        <option value="productos">Información de productos</option>
+                        <option value="envio">Información de envío</option>
+                        <option value="cambio">Cambio / devolución</option>
+                        <option value="setup">Armar un setup</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
 
-    </footer>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"
+                        placeholder="Cuéntanos en qué te podemos ayudar..."></textarea>
+                </div>
+
+                <button class="btn-send" id="send-btn" onclick="sendForm(event)">
+                    Enviar Mensaje
+                </button>
+
+                <div id="form-success" style="display:none;">
+                    Mensaje enviado. ¡Te contactamos pronto!
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
