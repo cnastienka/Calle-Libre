@@ -7,51 +7,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="navBar">
-
+ 
+<!-- ===== PROTECCIONES ===== -->
+    <div class="cat-panel" id="panel-protecciones">
+      <div class="cat-panel-header"><div class="cat-panel-title"> Protecciones</div><div class="carousel-controls"><button class="cc-btn" onclick="slideCarousel('protecciones',-1)">&#8249;</button><button class="cc-btn" onclick="slideCarousel('protecciones',1)">&#8250;</button></div></div>
+      <div class="prod-carousel-wrap"><div class="prod-carousel" id="car-protecciones">
+        <div class="product-card"><div class="product-img-wrap"><img src="https://i.pinimg.com/736x/67/17/d2/6717d2fffdba2bf531667e04654a019c.jpg" alt="Kit negro" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Protecciones</p><h3 class="product-name">Kit Completo Negro</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>899</div><button class="btn-add" onclick="addToCart('Kit Completo Negro',899)">+ Carrito</button></div></div></div>
+        <div class="product-card"><div class="product-img-wrap"><img src="https://i.pinimg.com/736x/02/5e/92/025e9218899ee73248c8fef16f4ebcd4.jpg" alt="Muñequeras coderas" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Protecciones</p><h3 class="product-name">Muñequeras y Coderas</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>239</div><button class="btn-add" onclick="addToCart('Muñequeras y Coderas',239)">+ Carrito</button></div></div></div>
+        <div class="product-card"><div class="product-img-wrap"><img src="https://i.pinimg.com/1200x/5c/a2/8a/5ca28a6b1fd2a856665e9026c70f6fb9.jpg" alt="Kit blanco negro" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Protecciones</p><h3 class="product-name">Kit Completo Blanco y Negro</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>949</div><button class="btn-add" onclick="addToCart('Kit Blanco Negro',949)">+ Carrito</button></div></div></div>
+        <div class="product-card"><div class="product-img-wrap"><img src="https://i.pinimg.com/736x/75/c8/5b/75c85bdd8bef03215b9728185cd44070.jpg" alt="Kit completo rodilleras" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Protecciones</p><h3 class="product-name">Muñequeras + Coderas + Rodilleras</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>389</div><button class="btn-add" onclick="addToCart('Kit Rodilleras',389)">+ Carrito</button></div></div></div>
+        <div class="product-card"><div class="product-img-wrap"><img src="https://i.pinimg.com/1200x/ef/5a/94/ef5a946ac7449f961acf208640f59ef3.jpg" alt="Kit Impala" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Protecciones</p><h3 class="product-name">Kit Impala — Muñequeras + Rodilleras</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>419</div><button class="btn-add" onclick="addToCart('Kit Impala',419)">+ Carrito</button></div></div></div>
+        <div class="product-card"><div class="product-img-wrap"><img src="https://i.pinimg.com/1200x/a0/f7/7d/a0f77dc0964163e11f89c0b83944546f.jpg" alt="Casco blanco" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Protecciones</p><h3 class="product-name">Casco Blanco</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>359</div><button class="btn-add" onclick="addToCart('Casco Blanco',359)">+ Carrito</button></div></div></div>
+      </div></div>
+      <div class="prod-dots" id="dots-protecciones"></div>
     </div>
-    <div class="navbar">
 
+<!-- ================================================================
+BENEFICIOS — ¿Por qué elegirnos?
+================================================================ -->
+<section class="benefits" id="beneficios">
+  <div class="benefits-inner">
+    <div class="section-header reveal">
+      <p class="section-tag">¿Por qué elegirnos?</p>
+      <h2 class="section-title">Nuestros Beneficios</h2>
+      <p class="section-desc">Somos skaters que venden equipo de skate. Sabemos lo que necesitas.</p>
     </div>
-    <div class="ropa">
-
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <h3 class="benefit-title">Envíos Rápidos</h3>
+        <p class="benefit-text">Enviamos a toda la República Mexicana. Pedidos antes de las 2 PM salen el mismo día hábil.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <h3 class="benefit-title">Producto Auténtico</h3>
+        <p class="benefit-text">100% original. Trabajamos solo con distribuidores oficiales nacionales e internacionales.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <h3 class="benefit-title">Cambios Fáciles</h3>
+        <p class="benefit-text">30 días para cambios sin costo si el producto no te convence. Sin preguntas.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <h3 class="benefit-title">Asesoría Experta</h3>
+        <p class="benefit-text">Somos skaters activos. Te ayudamos a armar el setup perfecto para tu nivel y estilo.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <h3 class="benefit-title">Pago Seguro</h3>
+        <p class="benefit-text">Múltiples métodos de pago: efectivo, tarjeta, transferencia y pagos en meses sin intereses.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <h3 class="benefit-title">Tienda Local</h3>
+        <p class="benefit-text">Somos una tienda de skate de la Ciudad de México, apoyando la escena local desde el principio.</p>
+      </div>
     </div>
-    <div class="tablas">
-<div class="card" style="width: 18rem;">
-  <img src="https://sindicatoskated.com/wp-content/uploads/2026/03/DORADO-300x300.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Tabla Ludica Portal</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
-</div>
-    </div>
-    <div class="baleros">
-
-    </div>
-    <div class="lijas">
-
-    </div>
-    <div class="trocs">
-
-    </div>
-    <div class="llantas">
-
-    </div>
-    <div class="elevadores">
-
-    </div>
-    <div class="protecciones">
-
-    </div>
-    <div class="estampas">
-
-    </div>
-    <footer class="footer">
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+</section>
 </body>
 </html>
