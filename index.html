@@ -10,6 +10,7 @@
 </head>
 <body>
 
+   ENVÍO GRATIS EN COMPRAS +$999 &nbsp;|&nbsp; TABLAS NACIONALES E IMPORTADAS &nbsp;|&nbsp; EQUIPO PROFESIONAL
 <!-- ── BARRA DE ANUNCIO ── -->
 <div class="announce-bar">
   🛹 ENVÍO GRATIS EN COMPRAS +$999 &nbsp;|&nbsp; TABLAS NACIONALES E IMPORTADAS &nbsp;|&nbsp; EQUIPO PROFESIONAL
@@ -39,7 +40,6 @@
     </div>
   </div>
 </nav>
-
 <!-- ================================================================
      PRODUCTOS — un carrusel por cada categoría
 ================================================================ -->
@@ -50,7 +50,7 @@
       <h2 class="section-title">Productos Destacados</h2>
       <p class="section-desc">Equipo seleccionado por skaters, para skaters.</p>
     </div>
-
+        <div class="cat-panel-title">Tablas</div>
     <!-- Tabs de categoría -!>
     <div class="cat-tabs">
       <button class="cat-tab active" data-tab="tablas"       onclick="switchTab('tablas')">Tablas</button>
@@ -111,9 +111,10 @@
     </div>
 </section>
 
+
     <!-- ===== PLAYERAS ===== -->
     <div class="cat-panel" id="panel-playeras">
-      <div class="cat-panel-header"><div class="cat-panel-title">👕 Playeras</div><div class="carousel-controls"><button class="cc-btn" onclick="slideCarousel('playeras',-1)">&#8249;</button><button class="cc-btn" onclick="slideCarousel('playeras',1)">&#8250;</button></div></div>
+      <div class="cat-panel-header"><div class="cat-panel-title"> Playeras</div><div class="carousel-controls"><button class="cc-btn" onclick="slideCarousel('playeras',-1)">&#8249;</button><button class="cc-btn" onclick="slideCarousel('playeras',1)">&#8250;</button></div></div>
       <div class="prod-carousel-wrap"><div class="prod-carousel" id="car-playeras">
         <div class="product-card"><div class="product-img-wrap"><img src="https://chilangoskate.com/cdn/shop/files/PlayeraFlatboynegra.jpg?v=1765566348&width=960" alt="Flat Boy Negra" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Playeras</p><h3 class="product-name">Chilango x Flat Boy Negra</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>400</div><button class="btn-add" onclick="addToCart('Flat Boy Negra',400)">+ Carrito</button></div></div></div>
         <div class="product-card"><div class="product-img-wrap"><img src="https://chilangoskate.com/cdn/shop/files/PlayeraFlatMultitudBlanca.jpg?v=1765566917&width=960" alt="Flat Boy Blanca" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Playeras</p><h3 class="product-name">Chilango x Flat Boy Blanca</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>400</div><button class="btn-add" onclick="addToCart('Flat Boy Blanca',400)">+ Carrito</button></div></div></div>
@@ -126,7 +127,97 @@
         <div class="product-card"><div class="product-img-wrap"><img src="https://fishbone.com.mx/cdn/shop/files/showimage_f1877313-1200-4534-bf44-0324ce43721d.webp?v=1721711599&width=1600" alt="Cop Car Black" loading="lazy"/></div><div class="product-info"><p class="product-cat-label">Playeras</p><h3 class="product-name">Cop Car T-Shirt Black</h3><div class="product-footer"><div class="product-price"><span class="currency">$</span>499</div><button class="btn-add" onclick="addToCart('Cop Car Black',499)">+ Carrito</button></div></div></div>
       </div></div>
       <div class="prod-dots" id="dots-playeras"></div>
+     <!-- ================================================================
+        CONTACTO
+    ================================================================ -->
+    <section class="contact" id="contacto">
+        <div class="contact-inner">
 
+            <!-- Columna izquierda: título + datos de contacto -->
+            <div>
+                <div style="margin-bottom:32px;">
+                    <p class="section-tag" style="justify-content:flex-start;color:#fff;">ESCRÍBENOS</p>
+                    <h2 class="section-title" style="color:#fff;font-size:clamp(3rem,7vw,6rem);letter-spacing:2px;">CONTACTO</h2>
+                </div>
+
+                <p class="contact-intro">
+                    ¿Tienes dudas sobre productos, tallas o envíos? Contáctanos y te respondemos rápido.
+                </p>
+                <div class="contact-detail">
+                    <div class="icon">📍</div>
+                    <div class="txt">
+                        <strong>Ubicación</strong>
+                        <span>Ciudad de México, CDMX</span>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="icon">📱</div>
+                    <div class="txt">
+                        <strong>WhatsApp</strong>
+                        <span>+52 55 1234 5678</span>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="icon">📧</div>
+                    <div class="txt">
+                        <strong>Email</strong>
+                        <span>hola@callelibre.mx</span>
+                    </div>
+                </div>
+
+                <div class="contact-detail">
+                    <div class="icon">🕐</div>
+                    <div class="txt">
+                        <strong>Horario</strong>
+                        <span>Lun-Sáb 10:00-20:00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna derecha: formulario -->
+            <div class="contact-form reveal">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">— Selecciona un tema —</option>
+                        <option value="pedido">Consulta de pedido</option>
+                        <option value="productos">Información de productos</option>
+                        <option value="envio">Información de envío</option>
+                        <option value="cambio">Cambio / devolución</option>
+                        <option value="setup">Armar un setup</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje"
+                        placeholder="Cuéntanos en qué te podemos ayudar..."></textarea>
+                </div>
+
+                <button class="btn-send" id="send-btn" onclick="sendForm(event)">
+                    Enviar Mensaje
+                </button>
+
+                <div id="form-success" style="display:none;">
+                    Mensaje enviado. ¡Te contactamos pronto!
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
